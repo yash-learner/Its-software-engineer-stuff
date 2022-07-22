@@ -9,3 +9,8 @@ The most widely used communication protocols on top of TCP for communication bet
 - gRPC (RPC)
 - Apache Trift (RPC)
 - Twrip (RPC)
+
+
+
+https://www.google.com/search?q=idempotency.&sourceid=chrome&ie=UTF-8
+What is idempotency in API's ?
