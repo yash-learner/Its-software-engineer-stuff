@@ -1,11 +1,11 @@
 API - Application Programming Interface
 
-Application - Software that does a task. - Ebay/google search/skype ....
-Programming - Programming that does a task in the Application. - Zomato uses a program for placing a order.
-Interface - is a place to tell the program to run.
+- Application - Software that does a task. - Ebay/google search/skype ....
+- Programming - Programming that does a task in the Application. - Zomato uses a program for placing a order.
+- Interface - is a place to tell the program to run.
 
-An API exists where you can tell (I) a computer program(P) to run in an application (A).
-An API means telling a program to run a task in a piece of software or application.
+- An API exists where you can tell (I) a computer program(P) to run in an application (A).
+- An API means telling a program to run a task in a piece of software or application.
 
 
 What makes API's great ?
@@ -22,8 +22,11 @@ Example google search :
 www.google.com/search?q=code
 
 location where program exists : google.com
+
 program/Folder : Search
+
 search term : code => We can add this using a parameter here it is a query after `?`.
+
 response: a web page with results.
 
 params are separated by `&`.
@@ -36,6 +39,7 @@ Api's calling API's.
 WEB SERVICE :
 
 Web => Internet => connected systems.
+
 Service => API
 
 Web Service => API that uses internet.
@@ -70,30 +74,30 @@ Response also uses the same as above
 
 **Request:**
 
-Startline - version of HTTP, method type - POST/GET/PUT/DELETE, parameters (/search?q=code) - also know as Request line.
-Headers - HOST(www.google.com), Token for authorization
-API Program folder - Yes example: /search
-Parameters - Yes example: ?q=code
-status code - No
+- Startline - version of HTTP, method type - POST/GET/PUT/DELETE, parameters (/search?q=code) - also know as Request line.
+- Headers - HOST(www.google.com), Token for authorization
+- API Program folder - Yes example: /search
+- Parameters - Yes example: ?q=code
+- status code - No
 
-Blankline -
-Body - sending information in post
-StartLine Format - Method(Space)API Program Folder LOcation+Parameters(space)HTTP Version
-Example: GET/search?q=code HTTP/1.1
+- Blankline -
+- Body - sending information in post
+- StartLine Format - Method(Space)API Program Folder LOcation+Parameters(space)HTTP Version
+- Example: GET/search?q=code HTTP/1.1
 
 **Response:**
 
-Startline - Status code, version of HTTP -  also know as response line or staus line
-Headers - Cookies, file size, type(HTML)
-API Program folder - No
-Parameters - No
-status code - Yes example:200
-Startline Format - HTTP version + Status Code
-Example - HTTP/1.1 200 OK
+- Startline - Status code, version of HTTP -  also know as response line or staus line
+- Headers - Cookies, file size, type(HTML)
+- API Program folder - No
+- Parameters - No
+- status code - Yes example:200
+- Startline Format - HTTP version + Status Code
+- Example - HTTP/1.1 200 OK
 
 
-Blankline - 
-Body - HTML document
+- Blankline - 
+- Body - HTML document
 
 
 **Idempotance** - Can do as many times as you want and result stays the same => In other words safe to repeat the request.
@@ -111,6 +115,7 @@ https://developer.mozilla.org/en-US/docs/Glossary/HTTP_header#:~:text=An%20HTTP%
 **Body**  - Contains content.
 
 It can be a image, video, HTML web page, Text data - data you would like to send to am API
+
 Content-Type - header specifies type of content that is being sent or received in the body - Type/Subtype
 
 ----------------------------------
@@ -118,11 +123,15 @@ Content-Type - header specifies type of content that is being sent or received i
 **Stateless** 
 
 State => Current Situation (in context)
+
 State (HTTP) => Web request and response 
+
 less =>Without
 
 HTTP Stateless => Request Unknow
+
 HTTP is stateless buy default 
+
 HTTP methods are in RESRT and SOAP
 
 example of stateful protocol => FTP (File Transfer Protocol )
